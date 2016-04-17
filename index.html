@@ -7,36 +7,22 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип "Глейси"">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Логотип &quot;Глейси&quot;">
         <nav class="main-navigation">
           <ul>
             <li>
               <a href="#">Каталог</a>
               <!--Подменю-->
               <ul>
-                <li>
-                  <a href="#">Новинки</a>
-                </li>
-                <li>
-                  <a href="#">Сливочное</a>
-                </li>
-                <li>
-                  <a href="#">Щербеты</a>
-                </li>
-                <li>
-                  <a href="#">Фруктовы лед</a>
-                </li>
-                <li>
-                  <a href="#">Мелорин</a>
-                </li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовы лед</a></li>
+                <li><a href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#">Доставка и оплата</a>
-            </li>
-            <li>
-              <a href="#">О компании</a>
-            </li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
           </ul>
         </nav>
         <div class="user-block">
@@ -45,7 +31,7 @@
               <a href="#">Поиск</a>
               <ul class="find-list"> <!--Выпадающая форма поиска-->
                 <li>
-                  <form class="find-form" action="https://echo.htmlacdemy.ru" method="post">
+                  <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
                     <input class="find" type="text" name="find-input" value="Что ищем?">
                   </form>
                 </li>
@@ -55,7 +41,7 @@
               <a href="#">Вход</a>
               <ul class="login-list"> <!--Выпадающая форма для входа-->
                 <li>
-                  <form class="login-form" action="https://echo.htmlacdemy.ru" method="post">
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                     <input class="mail" type="email" name="mail-input" value="Электронная почта">
                     <input class="password" type="password" name="password-input" value="Пароль">
                     <div class="btn">
@@ -75,7 +61,7 @@
             <li>
               <p>
                 C 10 до 20, ежедневно<br>
-                <b>8 812 450-25-25<b>
+                <span>8 812 450-25-25<span>
               </p>
             </li>
           </ul>
@@ -111,28 +97,26 @@
         <div class="left-banner">
           <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="btn btn-banner">Хочу варенье!</button>
+          <a class="btn btn-banner" href="#">Хочу варенье!</a>
         </div>
         <div class="right-banner">
           <h2>Шоколадки даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="btn btn-banner">Хочу шоколадки!</button>
+          <a class="btn btn-banner" href="#">Хочу шоколадки!</a>
         </div>
       </div>
       <!--Блок с хитами-->
       <div class="hits">
-        <div class="item">
-          <div class="flag"></div><!--Иконка хит-->
+        <div class="hit-item">
           <div class="image">
-            с
+            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-3">
           </div>
           <div class="price">
             <p>310 /кг</p>
           </div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
-        <div class="item"><!--Иконка хит-->
-          <div class="flag"></div>
+        <div class="hit-item">
           <div class="image">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-3">
           </div>
@@ -141,8 +125,7 @@
           </div>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </div>
-        <div class="item">
-          <div class="flag"></div>
+        <div class="hit-item">
           <div class="image">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-3">
           </div>
@@ -151,8 +134,7 @@
           </div>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
-        <div class="item">
-          <div class="flag"></div>
+        <div class="hit-item">
           <div class="image">
             <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-3">
           </div>
@@ -164,7 +146,7 @@
       </div>
       <!--Блок с информацией о магазине-->
       <div class="about">
-        <b class="about-shop">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</b>
+        <span class="about-shop">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</span>
         <ul>
           <li>
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -201,19 +183,9 @@
         </div>
         <!--Блок с адресом-->
         <div class="address">
-          <p>
-             Адрес главного офиса и<br>
-             офлайн магазина:
-          <p>
-          <b>
-             ул. Большая Конюшенная<br>
-             19/8, Санкт-Петербург
-          </b>
-          <p>Для заказов по телефону<p>
-          <p>
-            <b>8 812 450-25-25<b><br>
-              (с 10 до 20 ежедневно)
-          </p>
+          <p>Адрес главного офиса и офлайн магазина:</p>
+          <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          <p>Для заказов по телефону<span>8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
           <a href="#">Форма обратной связи</a>
         </div>
       </div>

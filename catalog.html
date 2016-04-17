@@ -7,35 +7,49 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <a href="#">"Логотип "Глейси"</a>
+        <a href="#">Логотип "Глейси"</a>
         <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#">Каталог</a>
-            </li>
-            <li>
-              <a href="#">Доставка и оплата</a>
-            </li>
-            <li>
-              <a href="#">О компании</a>
-            </li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
           </ul>
         </nav>
         <div class="user-block">
           <ul>
-            <li>
-              <a href="#">Поиск</a>
-            </li>
-            <li>
-              <a href="#">Вход</a>
-            </li>
+            <li><a href="#">Поиск</a></li>
+            <li><a href="#">Вход</a></li>
             <li>
               <a href="#">2 товара</a>
+              <ul class="cart-page"> <!--Выпадающая форма для корзины товаров-->
+                <li>
+                  <table>
+                      <tr>
+                        <td><img src="http://placehold.it/50x50" width="20" height="20" alt="Картинка"></td>
+                        <td><img src="http://placehold.it/50x50" width="70" height="70" alt="Фон-1"></td>
+                        <td>Пломбир с апельсиновым джемом</td>
+                        <td>1,5 кг x <span>200 руб.<span></td>
+                        <td>300 руб.</td>
+                      </tr>
+                      <tr>
+                        <td><img src="http://placehold.it/50x50" width="20" height="20" alt="Картинка"></td>
+                        <td><img src="http://placehold.it/50x50" width="70" height="70" alt="Фон-2"></td>
+                        <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
+                        <td>1,5 кг х <span>300 руб.<span></td>
+                        <td>300 руб.</td>
+                      </tr>
+                      <tr colspan="4">
+                        <td>Итого: 750 руб.</td>
+                      </tr>
+                    </table>
+                    <a href="#">Оформить заказ</a>
+                </li>
+              </ul>
             </li>
             <li>
               <p>
                 C 10 до 20, ежедневно<br>
-                <b>8 812 450-25-25<b>
+                <span>8 812 450-25-25</span>
               </p>
             </li>
           </ul>
@@ -52,7 +66,7 @@
       <!--Блок с фильтрами-->
       <div class="filters">
         <h1>Сливочное мороженое</h1>
-        <form class="filter-form" action="https://echo.htmlacdemy.ru" method="post">
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <!--Выпадающий список-->
           <div class="select">
             <h2>Сортировка</h2>
@@ -73,24 +87,20 @@
             <h2>Жирность</h2>
             <ul>
               <li>
-                <label>
-                  <input type="radio" name="group-radio" value="zero">0%
-                </label>
+                <input id="zero-id" type="radio" name="group-radio" value="zero">
+                <label for="zero-id">0%</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="group-radio" value="less-10" checked>до 10%
-                </label>
+                <input id="less-10-id" type="radio" name="group-radio" value="less-10" checked>
+                <label for="less-10-id">до 10%</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="group-radio" value="less-30">до 30%
-                </label>
+                <input id="less-30-id" type="radio" name="group-radio" value="less-30">
+                <label for="less-30-id">до 30%</label>
               </li>
               <li>
-                <label>
-                  <input type="radio" name="group-radio" value="more-30">выше 30%
-                </label>
+                <input id="more-30-id" type="radio" name="group-radio" value="more-30">
+                <label for="more-30-id">выше 30%</label>
               </li>
             </ul>
           </div>
@@ -99,27 +109,24 @@
             <h2>Наполнители</h2>
             <ul>
               <li>
-                <label>
-                  <input type="checkbox" name="baxter" checked>шоколадные
-                </label>
-              </li>
-              <label>
-                <input type="checkbox" name="mr-natty"  checked>сахарные присыпки
-              </label>
-              <li>
-              </li>
-              <label>
-                <input type="checkbox" name="suavecito">фрукты
-              </label>
-              <li>
-                <label>
-                  <input type="checkbox" name="malin">сиропы
-                </label>
+                <input id="chocolate-id" type="checkbox" name="chocolate" checked>
+                <label for="chocolate-id">шоколадные</label>
               </li>
               <li>
-                <label>
-                  <input type="checkbox" name="murray">джемы
-                </label>
+                <input id="sugar-id" type="checkbox" name="sugar" checked>
+                <label for="sugar-id">сахарные присыпки</label>
+              </li>
+              <li>
+                <input id="fruits-id" type="checkbox" name="fruits">
+                <label for="fruits-id">фрукты</label>
+              </li>
+              <li>
+                <input id="syrup-id" type="checkbox" name="syrup">
+                <label for="syrup-id">сиропы</label>
+              </li>
+              <li>
+                <input id="jam-id" type="checkbox" name="jam">
+                <label for="jam-id">джемы</label>
               </li>
             </ul>
           </div>
