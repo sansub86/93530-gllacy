@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -15,44 +16,41 @@
             <li><a href="#">О компании</a></li>
           </ul>
         </nav>
+        <div class="find-list"><!--Выпадающая форма поиска-->
+          <a href="#">Поиск</a>
+          <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="find" type="search" name="find-input" value="Что ищем?">
+          </form>
+        </div>
         <div class="user-block">
-          <ul>
-            <li><a href="#">Поиск</a></li>
-            <li><a href="#">Вход</a></li>
-            <li>
-              <a href="#">2 товара</a>
-              <ul class="cart-page"> <!--Выпадающая форма для корзины товаров-->
-                <li>
-                  <table>
-                      <tr>
-                        <td><img src="http://placehold.it/50x50" width="20" height="20" alt="Картинка"></td>
-                        <td><img src="http://placehold.it/50x50" width="70" height="70" alt="Фон-1"></td>
-                        <td>Пломбир с апельсиновым джемом</td>
-                        <td>1,5 кг x <span>200 руб.<span></td>
-                        <td>300 руб.</td>
-                      </tr>
-                      <tr>
-                        <td><img src="http://placehold.it/50x50" width="20" height="20" alt="Картинка"></td>
-                        <td><img src="http://placehold.it/50x50" width="70" height="70" alt="Фон-2"></td>
-                        <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
-                        <td>1,5 кг х <span>300 руб.<span></td>
-                        <td>300 руб.</td>
-                      </tr>
-                      <tr colspan="4">
-                        <td>Итого: 750 руб.</td>
-                      </tr>
-                    </table>
-                    <a href="#">Оформить заказ</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>
-                C 10 до 20, ежедневно<br>
-                <span>8 812 450-25-25</span>
-              </p>
-            </li>
-          </ul>
+          <a href="#">Вход</a></li>
+          <a href="#">2 товара</a>
+            <div class="cart-page"> <!--Выпадающая форма для корзины товаров-->
+              <table>
+                <tr>
+                  <td><img src="img/x.svg" width="10" height="10" alt="Картинка"></td>
+                  <td><img src="img/ice-cream-small-1.png" width="33" height="33" alt="Фон-1"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг x <span>200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><img src="img/x.svg" width="10" height="10" alt="Картинка"></td>
+                  <td><img src="img/ice-cream-small-2.png" width="33" height="33" alt="Фон-2"></td>
+                  <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
+                  <td>1,5 кг х <span>300 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td colspan="4">Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <a href="#">Оформить заказ</a>
+            </div>
+            <p>
+              C 10 до 20, ежедневно<br>
+              <span>8 812 450-25-25</span>
+            </p>
         </div>
       </div>
     </header>
@@ -137,84 +135,84 @@
       <section class="goods">
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-1">
+            <img src="img/ice-cream-1.png" width="267" height="267" alt="Фон-1">
           </div>
           <p>310 /кг</p>
           </div>
           <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-2">
+            <img src="img/ice-cream-2.png" width="267" height="267" alt="Фон-2">
           </div>
           <p>380 /кг</p>
           <a href="#">Сливочно-кофейное с кусочками шоколада</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-3">
+            <img src="img/ice-cream-3.png" width="267" height="267" alt="Фон-3">
           </div>
           <p>355 /кг</p>
           <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-4">
+            <img src="img/ice-cream-4.png" width="267" height="267" alt="Фон-4">
           </div>
           <p>415 /кг</p>
           <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-5">
+            <img src="img/ice-cream-5.png" width="267" height="267" alt="Фон-5">
           </div>
           <p>325 /кг</p>
           <a href="#">Сливочное с брусничным джемом</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-6">
+            <img src="img/ice-cream-6.png" width="267" height="267" alt="Фон-6">
           </div>
           <p>410 /кг</p>
           <a href="#">Сливочно-черничное с цельными ягодами черники</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-7">
+            <img src="img/ice-cream-7.png" width="267" height="267" alt="Фон-7">
           </div>
           <p>375 /кг</p>
           <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-8">
+            <img src="img/ice-cream-8.png" width="267" height="267" alt="Фон-8">
           </div>
           <p>320 /кг</p>
           <a href="#">Сливочное с шоколадной стружкой</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-9">
+            <img src="img/ice-cream-9.png" width="267" height="267" alt="Фон-9">
           </div>
           <p>440 /кг</p>
           <a href="#">Сливочно-ванильное с кусочками шоколада</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-10">
+            <img src="img/ice-cream-10.png" width="267" height="267" alt="Фон-10">
           </div>
           <p>435 /кг</p>
           <a href="#">Сливочноe с ментоловым сиропом</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-11">
+            <img src="img/ice-cream-11.png" width="267" height="267" alt="Фон-11">
           </div>
           <p>355 /кг</p>
           <a href="#">Сливочное с кусочками черного шоколада</a>
         </div>
         <div class="item">
           <div class="image">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Фон-12">
+            <img src="img/ice-cream-12.png" width="267" height="267" alt="Фон-12">
           </div>
           <p>420 /кг</p>
           <a href="#">Сливочное с мятным сиропом</a>
