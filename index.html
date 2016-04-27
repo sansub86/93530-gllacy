@@ -9,7 +9,7 @@
   <body>
     <header class="main-header">
       <div class="header-container">
-        <img src="img/logo.svg" width="154" height="64" alt="Логотип &quot;Глейси&quot;">
+        <img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип &quot;Глейси&quot;">
         <nav class="main-navigation">
           <ul>
             <li>
@@ -24,17 +24,17 @@
               </ul>
             </li>
             <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
+            <li><a href="#">О Компании</a></li>
           </ul>
         </nav>
         <div class="find-list"><!--Выпадающая форма поиска-->
-          <a href="#">Поиск</a>
+          <a class="btn-header btn-search" href="#"></a>
           <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
             <input class="find" type="search" name="find-input" value="Что ищем?">
           </form>
         </div>
         <div class="user-block">
-          <a href="#">Вход</a>
+          <a class="btn-header btn-entrance" href="#">Вход</a>
           <div class="login-list"> <!--Выпадающая форма для входа-->
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <input class="mail" type="email" name="mail-input" placeholder="Электронная почта">
@@ -43,41 +43,46 @@
                 <input type="submit" value="Войти">
               </div>
               <div class="links"> <!--блок для ссылок-->
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+                <a class="btn-password" href="#">Забыли пароль?</a>
+                <a class="btn-registrate" href="#">Новая регистрация</a>
               </div>
             </form>
           </div>
-          <a href="#">Пусто</a>
+          <a class="btn-header btn-basket" href="#">Пусто</a>
         </div>
-        <p>
-          C 10 до 20, ежедневно<br>
-          <span>8 812 450-25-25</span>
+      </div>
+      <div class="header-container">
+        <p class="timetable">
+        C 10 до 20, ежедневно<br>
+        <span>8 812 450-25-25</span>
         </p>
       </div>
     </header>
     <main>
       <div class="main-container">
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
         <div class="slider">
-          <input type="radio" id="btn-1" name="toggle" checked>
-          <input type="radio" id="btn-2" name="toggle">
-          <input type="radio" id="btn-3" name="toggle">
-            <div class="slider-controls">
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
-              <label for="btn-3"></label>
-            </div>
             <div class="slider-inner">
               <div class="slider-slides">
-                <img src="img/ice-cream-fon1.png" width="644" height="582" alt="Фон-1">
-                <h1>Крем-брюле и пломбир с малиновым джемом</h1>
-                <button class="btn btn-both">Давайте оба!</button>
-                <img src="img/ice-cream-fon2.png" width="644" height="582" alt="Фон-2">
-                <h1>Шоколадный пломбир и лимонный сорбет</h1>
-                <button class="btn btn-both">Давайте оба!</button>
-                <img src="img/ice-cream-fon3.png" width="644" height="582" alt="Фон-3">
-                <h1>Пломбир с помадкой и клубничный щербет</h1>
-                <button class="btn btn-both">Давайте оба!</button>
+                <div class="slide">
+                  <p>Крем-брюле и пломбир с малиновым джемом</p>
+                  <a class="btn btn-both">Давайте оба!</a>
+                </div>
+                <div class="slide">
+                  <p>Шоколадный пломбир и лимонный сорбет</p>
+                  <a class="btn btn-both">Давайте оба!</a>
+                </div>
+                <div class="slide">
+                  <p>Пломбир с помадкой и клубничный щербет</p>
+                  <a class="btn btn-both">Давайте оба!</a>
+                </div>
               </div>
             </div>
         </div>
@@ -150,11 +155,13 @@
             <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
           </div>
           <div class="distribution">
+			<div class="distribution-wrap">
             <form class="distribution-form" action="https://echo.htmlacdemy.ru" method="post">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
               <input type="email" value="Электронная почта">
               <input type="submit" value="Отправить">
             </form>
+			</div>
           </div>
         </section>
         <!--Блок с картой-->
@@ -175,10 +182,10 @@
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-social">
-          <a class="social-btn social-btn-twitter" href="#">Твиттер</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-twitter" href="#"></a>
+          <a class="social-btn social-btn-inst" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-vk" href="#"></a>
         </div>
         <div class="footer-inform">
           <a href="#">Для поставщиков</a>
