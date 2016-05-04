@@ -19,13 +19,15 @@
               <li>
                 <a href="#">Каталог</a>
                 <!--Подменю-->
-                <ul class="submenu">
-                  <li><a href="#">Новинки</a></li>
-                  <li><a href="#">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
+        				<div class="wrap-submenu">
+        					<ul class="submenu">
+        					  <li><a href="#">Новинки</a></li>
+        					  <li><a href="#">Сливочное</a></li>
+        					  <li><a href="#">Щербеты</a></li>
+        					  <li><a href="#">Фруктовый лед</a></li>
+        					  <li><a href="#">Мелорин</a></li>
+        					</ul>
+        				</div>
               </li>
               <li><a href="#">Доставка и оплата</a></li>
               <li><a href="#">О Компании</a></li>
@@ -45,9 +47,7 @@
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                 <input class="mail" type="email" name="mail-input" placeholder="Электронная почта">
                 <input class="password" type="password" name="password-input" placeholder="Пароль">
-                <div class="btn">
-                  <input type="submit" value="Войти">
-                </div>
+                <input class="btn btn-enter" type="submit" value="Войти">
                 <div class="links"> <!--блок для ссылок-->
                   <a class="btn-password" href="#">Забыли пароль?</a>
                   <a class="btn-registrate" href="#">Новая регистрация</a>
@@ -55,7 +55,6 @@
               </form>
             </div>
             <a class="btn-header btn-basket" href="#">Пусто</a>
-
           </div>
           <p class="timetable">
           C 10 до 20, ежедневно<br>
@@ -161,7 +160,7 @@
         			<div class="distribution-wrap">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                 <form class="distribution-form" action="https://echo.htmlacdemy.ru" method="post">
-                  <input type="email" value="Электронная почта">
+                  <input class="email" type="email" value="Электронная почта">
                   <input class="btn btn-send"  type="submit" value="Отправить">
                 </form>
         			</div>
