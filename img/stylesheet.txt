@@ -7,113 +7,113 @@
 .sprite-backet {
     width: 21px;
     height: 20px;
-    background-position: -5px -5px;
+    background-position: -10px -10px;
 }
 
 .sprite-backet-black {
     width: 21px;
     height: 20px;
-    background-position: -5px -35px;
+    background-position: -10px -50px;
 }
 
 .sprite-backet-full {
     width: 15px;
     height: 10px;
-    background-position: -5px -65px;
+    background-position: -10px -90px;
 }
 
 .sprite-cow {
     width: 47px;
     height: 47px;
-    background-position: -5px -85px;
+    background-position: -10px -120px;
 }
 
 .sprite-entrance {
     width: 20px;
     height: 19px;
-    background-position: -5px -142px;
+    background-position: -10px -187px;
 }
 
 .sprite-entrance-black {
     width: 20px;
     height: 19px;
-    background-position: -5px -171px;
+    background-position: -10px -226px;
 }
 
 .sprite-heart {
     width: 15px;
     height: 13px;
-    background-position: -5px -200px;
+    background-position: -10px -265px;
 }
 
 .sprite-hit {
     width: 61px;
     height: 61px;
-    background-position: -5px -223px;
+    background-position: -10px -298px;
 }
 
 .sprite-ice-cream-ico {
     width: 47px;
     height: 47px;
-    background-position: -5px -294px;
+    background-position: -10px -379px;
 }
 
 .sprite-ico-fb {
     width: 31px;
     height: 31px;
-    background-position: -5px -351px;
+    background-position: -10px -446px;
 }
 
 .sprite-ico-instagram {
     width: 31px;
     height: 31px;
-    background-position: -5px -392px;
+    background-position: -10px -497px;
 }
 
 .sprite-ico-twitter {
     width: 31px;
     height: 31px;
-    background-position: -5px -433px;
+    background-position: -10px -548px;
 }
 
 .sprite-ico-vk {
     width: 31px;
     height: 31px;
-    background-position: -5px -474px;
+    background-position: -10px -599px;
 }
 
 .sprite-leaflet {
     width: 47px;
     height: 47px;
-    background-position: -5px -515px;
+    background-position: -10px -650px;
 }
 
 .sprite-logo-academy {
     width: 108px;
     height: 37px;
-    background-position: -5px -572px;
+    background-position: -10px -717px;
 }
 
 .sprite-loupe {
     width: 17px;
     height: 17px;
-    background-position: -5px -619px;
+    background-position: -10px -774px;
 }
 
 .sprite-loupe-black {
     width: 17px;
     height: 17px;
-    background-position: -5px -646px;
+    background-position: -10px -811px;
 }
 
 .sprite-rub {
     width: 31px;
     height: 36px;
-    background-position: -5px -673px;
+    background-position: -10px -848px;
 }
 
 .sprite-termometr {
     width: 47px;
     height: 47px;
-    background-position: -5px -719px;
+    background-position: -10px -904px;
 }
