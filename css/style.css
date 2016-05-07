@@ -821,11 +821,13 @@ input[type="search"] {
 /*Футер*/
 .main-footer {
 }
-.main-footer a:hover {
+.footer-inform a:hover,
+.footer-copyright a:hover {
   color:#ffbc9e;
   border-color: #ffbc9e;
 }
-.main-footer a:active {
+.footer-inform a:active,
+.footer-copyright a:active {
   color:#ffbc9e;
   border-color: #ffbc9e;
 }
