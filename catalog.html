@@ -40,28 +40,33 @@
                 </form>
               </div>
             </div>
-			<a class="btn-header btn-basket basket-full" href="#">2 товара</a>
-            <div class="cart-page"> <!--Выпадающая форма для корзины товаров-->
-              <table>
-                <tr>
-                  <td><img src="img/x.svg" width="10" height="10" alt="Картинка"></td>
-                  <td><img src="img/ice-cream-small-1.png" width="33" height="33" alt="Фон-1"></td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг x <span>200 руб.</span></td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr>
-                  <td><img src="img/x.svg" width="10" height="10" alt="Картинка"></td>
-                  <td><img src="img/ice-cream-small-2.png" width="33" height="33" alt="Фон-2"></td>
-                  <td>Клубничный пломбир с присыпкой  из белого шоколада</td>
-                  <td>1,5 кг х <span>300 руб.</span></td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr>
-                  <td colspan="4">Итого: 750 руб.</td>
-                </tr>
-              </table>
-              <a href="#">Оформить заказ</a>
+            <div class="basket">
+  			      <a class="btn-header btn-basket basket-full" href="#">2 товара</a>
+              <div class="cart-page-wrap">
+                <div class="cart-page"> <!--Выпадающая форма для корзины товаров-->
+                  <table>
+                    <tr>
+                      <td><img src="img/x.svg" width="10" height="10" alt="Картинка"></td>
+                      <td><img src="img/ice-cream-small-1.png" width="33" height="33" alt="Фон-1"></td>
+                      <td clss="cel-1">Пломбир с апельсиновым джемом</td>
+                      <td class="col-3">1,5 кг x <span>200 руб.</span></td>
+                      <td class="col-4">300 руб.</td>
+                    </tr>
+                    <tr>
+                      <td><img src="img/x.svg" width="10" height="10" alt="Картинка"></td>
+                      <td><img src="img/ice-cream-small-2.png" width="33" height="33" alt="Фон-2"></td>
+                      <td class="cel-2">Клубничный пломбир с присыпкой  из белого шоколада</td>
+                      <td class="col-3">1,5 кг х <span>300 руб.</span></td>
+                      <td class="col-4">450 руб.</td>
+                    </tr>
+                    <tr class="last-row">
+                      <td colspan="5"></td>
+                    </tr>
+                  </table>
+                  <p>Итого: 750 руб.</p>
+                  <a class="btn btn-order"href="#">Оформить заказ</a>
+                </div>
+              </div>
             </div>
         </div>
         <p class="timetable">
@@ -76,7 +81,7 @@
         <div class="breadcrumbs">
           <a href="#">Главная</a>
           <a href="#">Каталог</a>
-          <a href="#">Сливочное</a>
+          <a>Сливочное</a>
         </div>
         <!--Блок с фильтрами-->
 		    <h1 class="header-catalog">Сливочное мороженое</h1>
@@ -161,7 +166,10 @@
               <img src="img/ice-cream-1.png" width="267" height="267" alt="Фон-1">
             </div>
             <p>310 &nbsp&nbsp<span>/кг</span></p>
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -169,6 +177,9 @@
             </div>
             <p>380 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -176,6 +187,9 @@
             </div>
             <p>355 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -183,6 +197,9 @@
             </div>
             <p>415 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -190,6 +207,9 @@
             </div>
             <p>325 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочное с брусничным джемом</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -197,6 +217,9 @@
             </div>
             <p>410 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -204,6 +227,9 @@
             </div>
             <p>375 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -211,6 +237,9 @@
             </div>
             <p>320 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочное с шоколадной стружкой</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -218,6 +247,9 @@
             </div>
             <p>440 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -225,6 +257,9 @@
             </div>
             <p>435 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочноe с ментоловым сиропом</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -232,6 +267,9 @@
             </div>
             <p>355 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочное с кусочками черного шоколада</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="item">
             <div class="image">
@@ -239,11 +277,14 @@
             </div>
             <p>420 &nbsp&nbsp<span>/кг</span></p>
             <a href="#">Сливочное с мятным сиропом</a>
+            <div class="item-hover">
+              <a class="btn btn-hover">Быстрый просмотр</a>
+            </div>
           </div>
         </section>
         <!--Переключатель страниц-->
         <div class="paginator">
-          <a class="prev" href="#prev">Назад</a>
+          <a class="prev">Назад</a>
           <a class="current" href="#1">1</a>
           <a href="#2">2</a>
           <a href="#3">3</a>
