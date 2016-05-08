@@ -1,3 +1,7 @@
+.feedback,
+.modal-overlay {
+  display: none;
+}
 /*Подключим шрифты*/
 @font-face {
   font-family: Roboto Black;
@@ -62,10 +66,6 @@ h1 {
 }
 h2 {
   font-size: 24px;
-}
-/*скроем ненужное*/
-.feedback {
-  display: none;
 }
 /*Файл index.psd*/
 /*Хедер*/
@@ -469,7 +469,7 @@ input[type="radio"] {
 /*баннеры*/
 .banners {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   height: 230px;
   font-family: "Roboto Bold", "Arial", sans-serif;
   margin-bottom: 30px;
@@ -688,91 +688,91 @@ input[type="radio"] {
   background: url("../img/sprite.png") no-repeat -10px -904px;
 }
 /*Блок с новостями и рассылкой*/
+.blog-email {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
 .blog-news {
   margin-right: 1.1%;
-  width: 46.66%;
-  background: url("../img/strawberry.jpg") no-repeat;
+  margin-left: 2.2%;
+  width: 560px;
+  box-sizing: border-box;
+  min-height: 220px;
+  padding: 25px 20px;
+  background: url("../img/strawberry.jpg");
   border-radius: 18px;
+  display: block;
+
 }
 .blog-news h2 {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
+  line-height: 18px;
   color: #000000;
   font-weight: normal;
-  margin-left: 20px;
-  margin-top: 25px;
-  margin-bottom: 5px;
+  margin: 0;
+  padding-bottom: 7px
 }
 .blog-news a {
   font-family: "Roboto Bold", "Arial", sans-serif;
   font-size: 24px;
-  display: block;
   font-weight: normal;
-  margin-left: 20px;
   line-height: 30px;
   width: 300px;
   color: #323232;
 }
-.blog-email {
-  display: flex;
-  justify-content: center;
-  height: 220px;
-  padding-bottom: 40px;
-}
-
 .distribution {
   margin-left: 1.1%;
-  width: 46.66%;
+  margin-right: 2.2%;
+  width: 560px;
+  box-sizing: border-box;
   background:#ffffff url("../img/mail-background.png");
   border-radius: 18px;
+  padding: 5px;
 }
 .distribution-wrap {
-	top: -11px;
-	position: relative;
-	min-height: 210px;
 	background: #ffffff;
 	border-radius: 18px;
-	margin:7px;
+  padding: 30px 20px 35px 20px;
+
+}
+.distribution-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.email {
+  flex-grow: 1;
+  margin-right: 10px;
 }
 .btn-send {
   font-size: 18px;
   line-height: 24px;
   border:none;
-  float: right;
-  margin-right: 20px;
   padding: 10px 20px;
   border-radius: 44px;
 }
 .distribution-wrap p {
-  padding-left:20px;
-  padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 20px;
   font-family: "Roboto Regular", "Arial", sans-serif;
   line-height: 22px;
   font-size: 16px;
   color: #5a5a5a;
-}
-.distribution-form {
-  font-size:0px;
-    display: flex;
+  margin: 0;
 }
 input[type="email"],
 input[type="password"],
-input[type="search"] {
-  height: 44px;
+input[type="search"],
+input[type="text"],
+textarea {
   box-sizing: border-box;
   border-radius: 5px;
-  border: 1px solid rgba(172, 172, 172, 0.52);;
+  border: 1px solid rgba(172, 172, 172, 0.5);
   font-size: 16px;
-  padding-left: 15px;
+  line-height: 24px;
+  padding: 9px 5px 9px 14px;
   color: #999999;
-}
-.email {
-  flex-grow: 1;
-  align-items: flex-end;
-  margin-left: 20px;
-  margin-right: 15px;
 }
 /*Блок с картой*/
 .container-map {
@@ -831,7 +831,6 @@ input[type="search"] {
   color:#ffbc9e;
   border-color: #ffbc9e;
 }
-
 .footer-container {
   display: flex;
   margin: 20px auto 0 auto;
@@ -933,6 +932,89 @@ input[type="search"] {
   color: #ffffff;
   border-bottom: 1px solid rgba(230,230,235,.4);
 }
+/*Форма обратной связи*/
+.feedback {
+  position: absolute;
+  left: 50%;
+  margin-left: -238px;
+  top: 344px;
+  background: #ffffff;
+  width: 477px;
+  box-sizing: border-box;
+  color:#000000;
+  padding: 17px 24px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  z-index: 10;
+}
+.feedback-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 0;
+  margin: 0;
+  outline: 0;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+  background-color: #ffffff;
+  border: none;
+}
+.feedback-close::before,
+.feedback-close::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: -3px;
+  width: 22px;
+  height: 2px;
+  background-color: #000000;
+  border-radius: 1px;
+}
+.feedback-close::before {
+  transform: rotate(45deg);
+}
+.feedback-close::after{
+  transform: rotate(-45deg);
+}
+.feedback h2 {
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
+}
+.feedback .name,
+ .feedback .e-mail{
+  width: 267px;
+  margin-bottom: 20px;
+}
+.feedback .commit {
+  display: block;
+  width: 428px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  padding-bottom: 0px;
+  margin-bottom: 25px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.3);
+}
+.feedback .btn-send {
+  float: right;
+  padding-left:23px;
+  padding-right:23px;
+  margin-bottom: 10px;
+}
 /*Файл catalog.psd*/
 /*Подсветка*/
 .catalog-item {
@@ -975,6 +1057,7 @@ input[type="search"] {
   color: #000000;
   z-index: 1;
   padding: 10px 15px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 .cart-page-wrap {
   position: absolute;
