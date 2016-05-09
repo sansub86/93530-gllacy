@@ -17,7 +17,7 @@
           <nav class="main-navigation">
             <ul>
               <li>
-                <a href="#">Каталог</a>
+                <a href="./catalog.html">Каталог</a>
                 <!--Подменю-->
         				<div class="wrap-submenu">
         					<ul class="submenu">
@@ -36,8 +36,11 @@
           <div class="find-list"><!--Выпадающая форма поиска-->
             <a class="btn-header btn-search" href="#"></a>
             <div class="find-wrap">
-              <form class="find-form" action="https://echo.htmlacademy.ru" method="post">
-                <input class="find" type="search" name="find-input" value="Что ищем?">
+              <form class="find-form" action="#" method="get">
+                <input class="find" type="search" name="find-input" id="find-id">
+                  <div class="placeholder">
+                    <label for="find-id">Что ищем?</label>
+                  </div>
               </form>
             </div>
           </div>
@@ -45,9 +48,15 @@
             <div class="login-list"> <!--Выпадающая форма для входа-->
               <a class="btn-header btn-entrance" href="#">Вход</a>
               <div class="login-list-wrap">
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <input class="mail" type="email" name="mail-input" placeholder="Электронная почта">
-                  <input class="password" type="password" name="password-input" placeholder="Пароль">
+                <form class="login-form" action="#" method="post">
+                  <input class="mail" type="email" name="mail-input" id="login-mail-id" required>
+                    <div class="placeholder">
+                      <label for="login-mail-id">Электронная почта</label>
+                    </div>
+                  <input class="password" type="password" name="password-input" id="login-password-id" required>
+                    <div class="placeholder">
+                      <label for="login-password-id">Пароль</label>
+                    </div>
                   <input class="btn btn-enter" type="submit" value="Войти">
                   <div class="links"> <!--блок для ссылок-->
                     <a class="btn-password" href="#">Забыли пароль?</a>
@@ -172,7 +181,7 @@
             <div class="distribution">
         			<div class="distribution-wrap">
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-                <form class="distribution-form" action="https://echo.htmlacdemy.ru" method="post">
+                <form class="distribution-form" action="#" method="post">
                   <input class="email" type="email" value="Электронная почта">
                   <input class="btn btn-send"  type="submit" value="Отправить">
                 </form>
@@ -224,10 +233,19 @@
     <div class="feedback">
       <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
     <h2>Мы обязательно вам ответим!</h2>
-    <form class="feedback-form" action="https://echo.htmlacdemy.ru" method="post">
-      <input class="name" type="text" value="Как вас зовут?">
-      <input class="e-mail" type="email" value="Ваша почта для ответа?">
-      <textarea class="commit" name="commit-field" rows="6" cols="48">Напишите что-нибудь...</textarea>
+    <form class="feedback-form" action="#" method="post">
+      <input class="name" type="text" id="name-id">
+      <div class="placeholder">
+        <label for="name-id">Как вас зовут?</label>
+      </div>
+      <input class="e-mail" type="email" id="id-email">
+      <div class="placeholder">
+        <label for="id-email">Ваша почта для ответа?</label>
+      </div>
+      <textarea class="commit" name="commit-field" id="textarea-id" rows="6" cols="48"></textarea>
+      <div class="placeholder">
+        <label for="id-email">Напишите что-нибудь...</label>
+      </div>
       <input class="btn btn-send" type="submit" name="feedback" value="Отправить">
     </form>
     </div>

@@ -97,6 +97,7 @@ h2 {
   display: inline-block;
   position: relative;
   padding:0 12px;
+  border-radius: 100px;
   font-size: 0;
 }
 
@@ -112,20 +113,17 @@ h2 {
 /* Меню при наведении*/
 .main-navigation li:hover {
   background: #ffffff;
-  border-radius: 100px;
-  color: #000000;
+
 }
 .main-navigation li:active {
   background: #ffffff;
-  border-radius: 100px;
-  color: #000000;
   box-shadow: inset 0 1px 2px #696969;
 }
 .main-navigation li:hover a{
   color: #000000;
   border-bottom: none;
 }
-.main-navigation ul > li:hover .wrap-submenu {
+.main-navigation li:hover .wrap-submenu {
   display:block;
 }
 /*Подменю*/
@@ -151,12 +149,14 @@ h2 {
 }
 .submenu a {
   display:block;
+  margin: 0;
   font-family: "Roboto Regular", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  padding: 7px 20px;
+  margin-bottom: 1px;
   color: #000000;
-  padding: 8px 20px;
 }
 .submenu li {
   margin: 0;
@@ -171,9 +171,9 @@ h2 {
 }
 .submenu li:first-child a{
   font-family: "Roboto Bold", "Arial", sans-serif;
-  padding-top: 10px;
+  padding-top: 9px;
+  margin-top: 2px;
   padding-bottom: 10px;
-
 }
 .submenu li:hover a{
   background-color: #fbded7;
@@ -181,6 +181,26 @@ h2 {
 .submenu li:active a {
   background-color: #f6b5a5;
 }
+.submenu .on-page:hover a{
+  background-color: #d07058;
+}
+.submenu .on-page:active a {
+  background-color: #d07058;
+}
+.on-page {
+background-color: #d07058;
+
+}
+.on-page a {
+  border: none;
+}
+.main-navigation li:hover .on-page {
+  border-radius: 0;
+}
+.main-navigation li:hover .on-page a{
+  color: #ffffff;
+}
+.catalog-item,
 .find-list {
   margin-left: auto;
   position: relative;
@@ -220,9 +240,9 @@ h2 {
   display: none;
   position: absolute;
   width: 311px;
-  height: 160px;
+  height: 50px;
   padding-top:10px;
-  left: -270px;
+  right: 0px;
   top: 25px;
 }
 .find-form {
@@ -236,8 +256,9 @@ h2 {
 	top: 10px;
   left: -29px;
 }
-.find {
+.find-form .find {
 	width: 100%;
+  margin-bottom: 20px;
 }
 /* Кнопка входа*/
 .btn-entrance {
@@ -269,22 +290,38 @@ h2 {
 	position: absolute;
 	left: -37px;
 	top: 6px;
-	background : #F8F7F4;
+	background : #ffffff;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
-	width: 237px;
-	height:174px;
 	z-index: 1;
-	padding: 20px;
+	padding: 20px 17px 22px 20px;
 	clear: both;
 }
 .mail {
 	margin-bottom: 20px;
-	width: 237px;
+	width: 241px;
 }
 .password {
 	margin-bottom: 20px;
-	width: 237px;
+	width: 241px;
+}
+.placeholder {
+  position: relative;
+}
+.placeholder label{
+  position: absolute;
+  top: -53px;
+  left: 14px;
+  font-size: 14px;
+  pointer-events: none;
+  color: #999999;
+  transition: 0.2s ease all;
+}
+input:focus + .placeholder label,
+input:valid + .placeholder label {
+    font-size: 11px;
+    color: #5b9ddf;
+    transform: translateY(-30px);
 }
 .btn-enter {
   float:left;
@@ -298,10 +335,9 @@ h2 {
 	width: 50%;
 	float: right;
 	font-size: 13px;
-  color: #000000;
 }
 .links a {
-  color: #000000;
+  color: #323232;
 }
 .links a:hover {
   color:#e84d37;
@@ -535,7 +571,8 @@ input[type="radio"] {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.item:hover .item-hover {
+.item:hover .item-hover,
+.item:hover::after {
   display: block;
 }
 .item-hover {
@@ -545,9 +582,9 @@ input[type="radio"] {
   left:0px;
   bottom:-51px;
   width: 100%;
+  background: rgba(255,255,255,.3);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: rgba(255,255,255,.3);
   padding-bottom: 17px;
 }
 .btn-hover {
@@ -570,13 +607,27 @@ input[type="radio"] {
   border-radius: 50%;
   background: url("../img/sprite.png") no-repeat -10px -300px;
 }
+/*Псевдотень*/
+.item::after {
+  content: '';
+  position: absolute;
+  display: none;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100%;
+  padding-bottom: 51px;
+  border-radius: 5px;
+  z-index: 1;
+  background: transparent;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.3);
+}
 .image {
   margin-bottom: 5px;
 }
 .item > a {
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,.2);
   text-align: center;
   padding: 0 5px;
 }
@@ -767,7 +818,8 @@ textarea {
   font-size: 16px;
   line-height: 24px;
   padding: 9px 5px 9px 14px;
-  color: #999999;
+  color: #323232;
+  font-family: "Roboto Bold", "Arial", sans-serif;
 }
 /*Блок с картой*/
 .container-map {
@@ -929,8 +981,8 @@ textarea {
 }
 /*Форма обратной связи*/
 .feedback {
-  position: absolute;
-  display: none;
+  position: fixed;
+  display:none;
   left: 50%;
   margin-left: -238px;
   top: 344px;
@@ -1253,6 +1305,7 @@ select:hover {
 	width: 20px;
 	height: 20px;
 	background: #ffffff;
+  cursor: pointer;
 	border-radius: 50%;
 	top:-9px;
 	left: -20px;
@@ -1265,6 +1318,7 @@ select:hover {
 	height: 20px;
 	background: #ffffff;
 	border-radius: 50%;
+  cursor: pointer;
 	top:-9px;
 	left: 80px;
 }
