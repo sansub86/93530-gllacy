@@ -40,3 +40,17 @@ window.addEventListener("keydown", function(event) {
           }
         }
 });
+/*скрипт для текстовых полей ввода*/
+var textfield = document.querySelectorAll(".textfield");
+for (var i = 0; i < textfield.length; i++) {
+textfield[i].addEventListener("focusout", function(event) {
+var elem = this;
+var placeholder = this.nextElementSibling;
+var label = placeholder.firstElementChild;
+if(elem.value.length == 0) {
+label.classList.remove("lostfocus");
+} else {
+label.classList.add("lostfocus");
+}
+}, false);
+}
