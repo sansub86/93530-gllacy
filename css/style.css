@@ -317,15 +317,15 @@ background-color: #d07058;
   color: #999999;
   transition: 0.2s ease all;
 }
-input:focus + .placeholder label {
+input:focus + .placeholder label,
+.commit:focus + .placeholder label {
   font-size: 11px;
   color: #5b9ddf;
   transform: translateY(-30px);
 }
-.commit:focus + .placeholder label  {
-  font-size: 11px;
-  color: #5b9ddf;
-  transform: translateY(-145px);
+.commit + .placeholder label {
+  top: -168px;
+  left: 14px;
 }
 .lostfocus {
     font-size: 11px;
