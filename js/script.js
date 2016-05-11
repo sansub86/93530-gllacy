@@ -1,5 +1,6 @@
 var link = document.querySelector(".btn-form");
 var popup = document.querySelector(".feedback");
+var overlay = document.querySelector(".modal-overlay")
 var close = document.querySelector(".feedback-close");
 var feedbackForm = document.querySelector(".feedback-form");
 var name = document.querySelector("[name=feedback-name]");
@@ -7,6 +8,7 @@ var mail = document.querySelector("[name=feedback-email]");
 var storage = localStorage.getItem("name");
 link.addEventListener("click", function(event){
   event.preventDefault();
+  overlay.classList.add("overlay");
   popup.classList.add("feedback-show");
   if (storage) {
           name.value = storage;
@@ -19,6 +21,7 @@ close.addEventListener("click", function(event){
   event.preventDefault();
   popup.classList.remove("feedback-show");
   popup.classList.remove("feedback-error");
+  overlay.classList.remove("overlay");
 });
 feedbackForm.addEventListener("submit", function(event) {
   if (!name.value || !mail.value) {
@@ -37,6 +40,7 @@ window.addEventListener("keydown", function(event) {
           if (popup.classList.contains("feedback-show")) {
             popup.classList.remove("feedback-show");
             popup.classList.remove("feedback-error");
+            overlay.classList.remove("overlay");
           }
         }
 });

@@ -312,10 +312,14 @@ background-color: #d07058;
   position: absolute;
   top: -53px;
   left: 14px;
-  font-size: 14px;
+  font-size: 16px;
   pointer-events: none;
   color: #999999;
   transition: 0.2s ease all;
+}
+.user-block label,
+.find-list label {
+  font-size: 14px;
 }
 input:focus + .placeholder label,
 .commit:focus + .placeholder label {
@@ -790,14 +794,20 @@ input[type="radio"] {
 .distribution-wrap {
 	background: #ffffff;
 	border-radius: 18px;
-  padding: 30px 20px 35px 20px;
+  padding: 30px 21px 35px 20px;
+  position: relative;
 
 }
 .distribution-form {
   display: flex;
   justify-content: space-between;
   margin-top: 35px;
-  display: relative;
+}
+.distribution-form .placeholder{
+    width: 200px;
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
 }
 .email {
   flex-grow: 1;
@@ -1058,8 +1068,7 @@ textarea {
   padding-bottom: 0px;
   margin-bottom: 25px;
 }
-.modal-overlay {
-  display: none;
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
