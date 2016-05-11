@@ -327,7 +327,7 @@ input:focus + .placeholder label,
   top: -168px;
   left: 14px;
 }
-.lostfocus {
+.placeholder .lostfocus {
     font-size: 11px;
     color: #5b9ddf;
     transform: translateY(-30px);
