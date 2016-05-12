@@ -889,6 +889,9 @@ textarea:hover{
   height:
   margin-bottom: -10px;
 }
+.container-map iframe {
+  width:100%;
+}
 .address {
 	position: absolute;
 	width: 302px;
@@ -900,7 +903,6 @@ textarea:hover{
 	border-radius: 10px;
 	box-sizing: border-box;
 	padding: 25px;
-
 }
 .address p {
   font-family: "Roboto Regular", "Arial", sans-serif;
