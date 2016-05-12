@@ -5,7 +5,7 @@ var close = document.querySelector(".feedback-close");
 var feedbackForm = document.querySelector(".feedback-form");
 var name = document.querySelector("[name=feedback-name]");
 var mail = document.querySelector("[name=feedback-email]");
-var storage = localStorage.getItem("name");
+//var storage = localStorage.getItem("name");
 link.addEventListener("click", function(event){
   event.preventDefault();
   overlay.classList.add("overlay");
