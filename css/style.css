@@ -64,6 +64,9 @@ h2 {
   font-size: 24px;
 }
 /*Файл index.psd*/
+.wrap {
+  min-width: 900px;
+}
 /*Хедер*/
 .main-header {
   margin-bottom: 22px;
@@ -801,7 +804,6 @@ input[type="radio"] {
   border-radius: 18px;
   padding: 5px;
   min-height: 220px;
-
 }
 .distribution-wrap {
   display: flex;
@@ -813,35 +815,38 @@ input[type="radio"] {
   box-sizing: border-box;
   padding: 30px 21px 35px 20px;
   position: relative;
-
 }
 .distribution-form {
   display: flex;
-  justify-content: space-between;
-  margin-bottom:0;
-  margin-top: auto;
 }
-.distribution-form .placeholder{
+.distribution-form .placeholder {
     width: 200px;
     position: absolute;
     left: 20px;
     bottom: 15px;
 }
-.email {
-  flex-grow: 1;
+.distribution-form .email {
   margin-right: 10px;
+  height: 44px;
+  flex-grow: 1;
+  margin-top:10px;
+  box-sizing: border-box;
 }
 .btn-send {
+  float: right;
   font-size: 18px;
   line-height: 24px;
   border:none;
+  margin-top: 9px;
   padding: 10px 20px;
   border-radius: 44px;
 }
 .distribution-wrap p {
+  display: block;
   font-family: "Roboto Regular", "Arial", sans-serif;
   line-height: 22px;
   font-size: 16px;
+  min-height: 90px;
   color: #5a5a5a;
   margin: 0;
 }
@@ -854,6 +859,7 @@ textarea {
   border-radius: 5px;
   border: 1px solid rgba(172, 172, 172, 0.5);
   font-size: 16px;
+  min-height: 43px;
   line-height: 24px;
   padding: 9px 5px 9px 14px;
   color: #323232;
@@ -882,12 +888,11 @@ textarea:hover{
 }
 /*Блок с картой*/
 .container-map {
-  position: relative;
   width:100%;
   height: 430px;
   background: url("../img/map.jpg") no-repeat 50% 0;
   height:
-  margin-bottom: -10px;
+  margin-bottom: -16px;
 }
 .container-map iframe {
   width:100%;
@@ -898,8 +903,9 @@ textarea:hover{
 	min-height: 305px;
 	background: #ffffff;
 	color: #000000;
-	top: 63px;
-	right: 59px;
+	bottom: -367px;
+	right: 2.2%;
+  z-index: 1;
 	border-radius: 10px;
 	box-sizing: border-box;
 	padding: 25px;
@@ -945,7 +951,7 @@ textarea:hover{
 }
 .footer-container {
   display: flex;
-  margin: 20px auto 0 auto;
+  margin: 14px auto 0 auto;
   align-items: center;
   max-width: 1200px;
   min-width: 900px;
@@ -1116,6 +1122,7 @@ textarea:hover{
 .feedback .commit {
   display: block;
   width: 428px;
+  min-height: 151px;
   box-sizing: border-box;
   outline: none;
   resize: none;

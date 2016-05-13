@@ -3,19 +3,13 @@ var popup = document.querySelector(".feedback");
 var overlay = document.querySelector(".modal-overlay")
 var close = document.querySelector(".feedback-close");
 var feedbackForm = document.querySelector(".feedback-form");
-var name = document.querySelector("[name=feedback-name]");
-var mail = document.querySelector("[name=feedback-email]");
-//var storage = localStorage.getItem("name");
+var name = document.querySelector("[name=name]");
+var mail = document.querySelector("[name=email]");
+var mail = document.querySelector("[name=text]");
 link.addEventListener("click", function(event){
   event.preventDefault();
   overlay.classList.add("overlay");
   popup.classList.add("feedback-show");
-  if (storage) {
-          name.value = storage;
-          mail.focus();
-        } else {
-          name.focus();
-        }
 });
 close.addEventListener("click", function(event){
   event.preventDefault();
