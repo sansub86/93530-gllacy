@@ -5,7 +5,20 @@ var close = document.querySelector(".feedback-close");
 var feedbackForm = document.querySelector(".feedback-form");
 var name = document.querySelector("[name=name]");
 var mail = document.querySelector("[name=email]");
-var mail = document.querySelector("[name=text]");
+/*скрипт для текстовых полей ввода*/
+var textfield = document.querySelectorAll(".textfield");
+for (var i = 0; i < textfield.length; i++) {
+textfield[i].addEventListener("focusout", function(event) {
+var elem = this;
+var placeholder = this.nextElementSibling;
+var label = placeholder.firstElementChild;
+if(elem.value.length == 0) {
+label.classList.remove("lostfocus");
+} else {
+label.classList.add("lostfocus");
+}
+}, false);
+}
 link.addEventListener("click", function(event){
   event.preventDefault();
   overlay.classList.add("overlay");
@@ -38,17 +51,3 @@ window.addEventListener("keydown", function(event) {
           }
         }
 });
-/*скрипт для текстовых полей ввода*/
-var textfield = document.querySelectorAll(".textfield");
-for (var i = 0; i < textfield.length; i++) {
-textfield[i].addEventListener("focusout", function(event) {
-var elem = this;
-var placeholder = this.nextElementSibling;
-var label = placeholder.firstElementChild;
-if(elem.value.length == 0) {
-label.classList.remove("lostfocus");
-} else {
-label.classList.add("lostfocus");
-}
-}, false);
-}
