@@ -33,9 +33,9 @@
       <a class="btn-header btn-search" href="#"></a>
       <div class="find-wrap">
         <form class="find-form" action="#" method="post">
-          <input class="find textfield" type="search" name="find-input" id="find-id">
           <div class="placeholder">
-            <label for="find-id">Что ищем?</label>
+            <input class="find textfield" type="search" name="find-input" id="find-id">
+            <label class="paceholder-label" for="find-id">Что ищем?</label>
           </div>
         </form>
       </div>
@@ -45,17 +45,17 @@
         <a class="btn-header btn-entrance" href="./cabinet.html">Вход</a>
         <div class="login-list-wrap">
           <form class="login-form" action="#" method="post">
-            <input class="mail textfield" type="email" name="mail-input" id="login-mail-id" required>
             <div class="placeholder">
-              <label for="login-mail-id">Электронная почта</label>
+              <input class="mail textfield" type="email" name="mail-input" id="login-mail-id" required>
+              <label class="paceholder-label" for="login-mail-id">Электронная почта</label>
             </div>
-            <input class="password textfield" type="password" name="password-input" id="login-password-id" required>
             <div class="placeholder">
-              <label for="login-password-id">Пароль</label>
+              <input class="password textfield" type="password" name="password-input" id="login-password-id" required>
+              <label class="paceholder-label" for="login-password-id">Пароль</label>
             </div>
             <input class="btn btn-enter" type="submit" value="Войти">
             <div class="links"> <!--блок для ссылок-->
-              <a class="btn-password" href="./forgot-password.html">Забыли пароль?</a>
+              <a class="btn-password" href="./forgot-passworg.html">Забыли пароль?</a>
               <a class="btn-registrate" href="./registration.html">Новая регистрация</a>
             </div>
           </form>
@@ -134,19 +134,19 @@
           <h2>Жирность:</h2>
           <div class="filter-wrap">
             <div class="fatness-item">
-              <input id="zero-id" type="radio" name="group-radio" value="zero">
+              <input class="fatness-input" id="zero-id" type="radio" name="group-radio" value="zero">
               <label for="zero-id">0%</label>
             </div>
             <div class="fatness-item">
-              <input id="less-10-id" type="radio" name="group-radio" value="less-10" checked>
+              <input class="fatness-input" id="less-10-id" type="radio" name="group-radio" value="less-10" checked>
               <label for="less-10-id">до 10%</label>
             </div>
             <div class="fatness-item">
-              <input id="less-30-id" type="radio" name="group-radio" value="less-30">
+              <input class="fatness-input" id="less-30-id" type="radio" name="group-radio" value="less-30">
               <label for="less-30-id">до 30%</label>
             </div>
             <div class="fatness-item">
-              <input id="more-30-id" type="radio" name="group-radio" value="more-30">
+              <input class="fatness-input" id="more-30-id" type="radio" name="group-radio" value="more-30">
               <label for="more-30-id">выше 30%</label>
             </div>
           </div>
@@ -156,23 +156,23 @@
           <h2>Наполнители</h2>
           <div class="filter-wrap">
             <div class="filler-item">
-              <input id="chocolate-id" type="checkbox" name="chocolate" checked>
+              <input class="filler-input" id="chocolate-id" type="checkbox" name="chocolate" checked>
               <label for="chocolate-id">шоколадные</label>
             </div>
             <div class="filler-item">
-              <input id="sugar-id" type="checkbox" name="sugar" checked disabled>
+              <input class="filler-input" id="sugar-id" type="checkbox" name="sugar" checked disabled>
               <label for="sugar-id">сахарные присыпки</label>
             </div>
             <div class="filler-item">
-              <input id="fruits-id" type="checkbox" name="fruits">
+              <input class="filler-input" id="fruits-id" type="checkbox" name="fruits">
               <label for="fruits-id">фрукты</label>
             </div>
             <div class="filler-item">
-              <input id="syrup-id" type="checkbox" name="syrup">
+              <input class="filler-input" id="syrup-id" type="checkbox" name="syrup">
               <label for="syrup-id">сиропы</label>
             </div>
             <div class="filler-item">
-              <input id="jam-id" type="checkbox" name="jam">
+              <input class="filler-input" id="jam-id" type="checkbox" name="jam">
               <label for="jam-id">джемы</label>
             </div>
           </div>

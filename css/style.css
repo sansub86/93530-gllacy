@@ -448,7 +448,7 @@ li:hover .creamy
     font-size: 16px;
 
     position: absolute;
-    top: -53px;
+    top: 11px;
     left: 14px;
 
     -webkit-transition: .2s ease all;
@@ -462,8 +462,8 @@ li:hover .creamy
 {
     font-size: 14px;
 }
-input:focus + .placeholder label,
-.commit:focus + .placeholder label
+input:focus + label,
+.commit:focus + label
 {
     font-size: 11px;
 
@@ -472,9 +472,9 @@ input:focus + .placeholder label,
 
     color: #5b9ddf;
 }
-.commit + .placeholder label
+.commit + label
 {
-    top: -168px;
+    top: 10px;
     left: 14px;
 }
 .placeholder .lostfocus
@@ -1203,14 +1203,6 @@ input[type='radio']
 }
 .distribution-form .placeholder
 {
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-
-    width: 200px;
-}
-.distribution-form .email
-{
     box-sizing: border-box;
     height: 44px;
     margin-top: 10px;
@@ -1219,6 +1211,10 @@ input[type='radio']
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+}
+.distribution-form .email
+{
+    width: 100%;
 }
 .btn-send
 {
@@ -1531,8 +1527,6 @@ textarea:hover
 
     display: none;
 
-    box-sizing: border-box;
-    width: 477px;
     margin-left: -238px;
     padding: 17px 24px;
 
@@ -1608,7 +1602,7 @@ textarea:hover
     box-sizing: border-box;
     width: 428px;
     min-height: 151px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     padding-bottom: 0;
 
     resize: none;
@@ -2158,27 +2152,27 @@ select:hover
     border-radius: 50%;
     background: 0 0;
 }
-.fatness-item input[type='radio']:checked + label::after
+.fatness-input:checked + label::after
 {
     background: #fff;
 }
-.fatness-item:hover label::before
+.fatness-input:hover label::before
 {
     box-shadow: inset 0 0 0 1px #fff;
 }
-.fatness-item input[type='radio']:disabled label
+.fatness-input:disabled label
 {
     cursor: default;
 }
-.fatness-item input[type='radio']:disabled + label::before
+.fatness-input:disabled + label::before
 {
     border: 1px solid rgba(248,247,244,.4);
 }
-.fatness-item input[type='radio']:checked:disabled + label::after
+.fatness-input:checked:disabled + label::after
 {
     background: rgba(248,247,244,.4);
 }
-.fatness-item:hover input[type='radio']:disabled + label::before
+.fatness-input:disabled + label::before
 {
     box-shadow: none;
 }
@@ -2244,7 +2238,7 @@ input[type='checkbox']
     border-right: 3px solid transparent;
     border-bottom: 3px solid transparent;
 }
-.filler-item input[type='checkbox']:checked + label::after
+.filler-input:checked + label::after
 {
     border-color: #fff;
 }
@@ -2277,15 +2271,15 @@ input[type='checkbox']
     border: none;
     box-shadow: inset 0 3px 1px #696969;
 }
-.filler-item input[type='checkbox']:disabled + label::before
+.filler-input:checked:disabled + label::before
 {
     border: 1px solid rgba(248,247,244,.4);
 }
-.filler-item input[type='checkbox']:checked:disabled + label::after
+.filler-input:checked:disabled + label::after
 {
     border-color: rgba(248,247,244,.4);
 }
-.filler-item:hover input[type='checkbox']:disabled + label::before
+.filler-input:disabled + label::before
 {
     box-shadow: none;
 }

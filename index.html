@@ -38,9 +38,9 @@
         <a class="btn-header btn-search" href="#"></a>
         <div class="find-wrap">
           <form class="find-form" action="#" method="post">
-            <input class="find textfield" type="search" name="find-input" id="find-id">
             <div class="placeholder">
-              <label for="find-id">Что ищем?</label>
+              <input class="find textfield" type="search" name="find-input" id="find-id">
+              <label class="paceholder-label" for="find-id">Что ищем?</label>
             </div>
           </form>
         </div>
@@ -50,13 +50,13 @@
           <a class="btn-header btn-entrance" href="./cabinet.html">Вход</a>
           <div class="login-list-wrap">
             <form class="login-form" action="#" method="post">
-              <input class="mail textfield" type="email" name="mail-input" id="login-mail-id" required>
               <div class="placeholder">
-                <label for="login-mail-id">Электронная почта</label>
+                <input class="mail textfield" type="email" name="mail-input" id="login-mail-id" required>
+                <label class="paceholder-label" for="login-mail-id">Электронная почта</label>
               </div>
-              <input class="password textfield" type="password" name="password-input" id="login-password-id" required>
               <div class="placeholder">
-                <label for="login-password-id">Пароль</label>
+                <input class="password textfield" type="password" name="password-input" id="login-password-id" required>
+                <label class="paceholder-label" for="login-password-id">Пароль</label>
               </div>
               <input class="btn btn-enter" type="submit" value="Войти">
               <div class="links"> <!--блок для ссылок-->
@@ -190,9 +190,9 @@
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
               Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
             <form class="distribution-form" action="#" method="post">
-              <input class="email textfield" type="email" name="email" id="email-id">
               <div class="placeholder">
-                <label for="email-id">Электронная почта</label>
+                <input class="email textfield" type="email" name="email" id="email-id">
+                <label class="paceholder-label" for="email-id">Электронная почта</label>
               </div>
               <input class="btn btn-send" type="submit" value="Отправить">
             </form>
@@ -247,17 +247,17 @@
   <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
   <h2>Мы обязательно вам ответим!</h2>
   <form class="feedback-form" action="#" method="post">
-    <input class="name textfield" type="text" name="feedback-name" id="name-id">
     <div class="placeholder">
-      <label for="name-id">Как вас зовут?</label>
+      <input class="name textfield" type="text" name="feedback-name" id="name-id">
+      <label class="paceholder-label" for="name-id">Как вас зовут?</label>
     </div>
-    <input class="e-mail textfield" type="email" name="feedback-email" id="id-email">
     <div class="placeholder">
-      <label for="id-email">Ваша почта для ответа?</label>
+      <input class="e-mail textfield" type="email" name="feedback-email" id="id-email">
+      <label class="paceholder-label" for="id-email">Ваша почта для ответа?</label>
     </div>
-    <textarea class="commit textfield" name="commit-field" id="textarea-id" rows="6" cols="48"></textarea>
     <div class="placeholder">
-      <label for="id-email">Напишите что-нибудь...</label>
+      <textarea class="commit textfield" name="commit-field" id="textarea-id" rows="6" cols="48"></textarea>
+      <label class="paceholder-label" for="id-email">Напишите что-нибудь...</label>
     </div>
     <input class="btn btn-send" type="submit" name="feedback" value="Отправить">
   </form>

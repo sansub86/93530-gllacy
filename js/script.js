@@ -10,8 +10,7 @@ var textfield = document.querySelectorAll(".textfield");
 for (var i = 0; i < textfield.length; i++) {
 textfield[i].addEventListener("focusout", function(event) {
 var elem = this;
-var placeholder = this.nextElementSibling;
-var label = placeholder.firstElementChild;
+var label = this.nextElementSibling;
 if(elem.value.length == 0) {
 label.classList.remove("lostfocus");
 } else {
