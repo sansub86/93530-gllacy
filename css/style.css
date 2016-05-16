@@ -1376,19 +1376,22 @@ textarea:hover
 .footer-social
 {
     font-size: 0;
+
+    margin-top: -2px;
     margin-right: auto;
     margin-left: 2.2%;
     padding-left: 2px;
-	margin-top: -2px;
 }
 .social-btn
 {
-	display:inline-block;
-	vertical-align: middle;
+    display: inline-block;
+
     box-sizing: border-box;
     width: 37px;
     height: 37px;
     margin-right: 12px;
+
+    vertical-align: middle;
 
     border: 3px solid rgba(255,255,255,.4);
     border-radius: 50%;
