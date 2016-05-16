@@ -1498,17 +1498,20 @@ textarea:hover
     padding-top: 27px;
 }
 
-.footer-copyright p::before
+.footer-copyright .academy-logo
 {
     position: absolute;
     top: 4px;
     left: 1px;
 
+    display: block;
+
     width: 108px;
     height: 37px;
 
-    content: '';
+    text-decoration: none;
 
+    border: 0;
     background: url('../img/sprite.png') no-repeat -10px -717px;
 }
 .footer-copyright a
