@@ -1376,17 +1376,15 @@ textarea:hover
 .footer-social
 {
     font-size: 0;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-
     margin-right: auto;
     margin-left: 2.2%;
     padding-left: 2px;
+	margin-top: -2px;
 }
 .social-btn
 {
+	display:inline-block;
+	vertical-align: middle;
     box-sizing: border-box;
     width: 37px;
     height: 37px;
